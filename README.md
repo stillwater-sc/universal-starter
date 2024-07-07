@@ -1,2 +1,2 @@
 # universal-starter
-Super simple repo to get started with using the Universal library
+Super simple repo to get started with the Universal library
