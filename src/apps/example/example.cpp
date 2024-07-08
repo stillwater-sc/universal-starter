@@ -5,7 +5,7 @@
 #include <universal/number/edecimal/edecimal.hpp>
 //#include <universal/number/fixpnt/fixpnt.hpp>
 
-int main(int argc, char* argv)
+int main(int argc, char** argv)
 try {
 	using namespace sw::universal;
 	edecimal d, e, f;
