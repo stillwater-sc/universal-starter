@@ -3,7 +3,7 @@ set(app_name example)
 project(${app_name} CXX)
 
 # Universal is a C++ header-only library, so we do not need to build anything
-include_directories(${STARTER_ROOT_DIR}/ext/stillwater-sc/universal/include)
+include_directories(${STARTER_UNIVERSAL_INCLUDE_DIR})
 
 # source files that make up the command
 set(SOURCE_FILES

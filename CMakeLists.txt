@@ -53,6 +53,7 @@ option(STARTER_USE_FOLDERS "Enable solution folders in Visual Studio, disable fo
 if (STARTER_USE_FOLDERS) 
   set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 endif()
+set(STARTER_UNIVERSAL_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/ext/stillwater-sc/universal/include" CACHE PATH "Directory path to the include directoryof the desired Universal library")
 
 ####
 # macro to read all cpp files in a directory
