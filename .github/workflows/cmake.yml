@@ -30,9 +30,9 @@ jobs:
           - os: ubuntu-22.04 # need to set explicity os version
             toolset: gcc
             version: 22.04   # the reason why you need to set os version
-          - os: macos-11
+          - os: macos-12
             toolset: clang
-            version: 11
+            version: 12
 
     steps:
       - name: Checkout
