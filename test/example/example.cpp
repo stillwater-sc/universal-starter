@@ -12,8 +12,17 @@ try {
 	f = 0xFFFF'FFFF'FFFF'FFFFull;
 	d = e + f;
 
-	std::cout << d << std::endl;
+    std::cout << "one                      e : " << e << '\n';
+    std::cout << "max unsigned long long   f : " << f << '\n';
+    std::cout << "                         d : " << d << '\n';
 
+    long double ld{std::pow(2.0l, 2000.0l)};
+    auto tpl = ieee_components(ld);
+    std::cout << "sign      : " << (get<0>(tpl) ? "1" : "0") << '\n';
+    std::cout << "exponent  : " << get<1>(tpl) << '\n';
+    std::cout << "fraction  : " << to_binary(get<2>(tpl)) << '\n';
+
+    
 	return EXIT_SUCCESS;
 
 }
